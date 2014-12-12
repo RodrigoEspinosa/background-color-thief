@@ -1,0 +1,62 @@
+@-webkit-keyframes arrow-animation {
+  from { opacity: 0; top: -20px; }
+  to { opacity: 1; top: 0; }
+}
+
+@-moz-keyframes arrow-animation {
+  from { opacity: 0; top: -20px; }
+  to { opacity: 1; top: 0; }
+}
+
+@keyframes arrow-animation {
+  from { opacity: 0; top: -20px; }
+  to { opacity: 1; top: 0; }
+}
+
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  transition: background-color 600ms;
+}
+
+img {
+  max-height: 500px;
+}
+
+.entry-viewport {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.half-viewport {
+  min-height: 50%;
+  overflow: hidden;
+}
+
+.spaced {
+  margin-top: 60px;
+}
+
+.scroll-down {
+  font-size: 2em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.scroll-down-arrow {
+  -webkit-animation-name: arrow-animation;
+  -webkit-animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-name: arrow-animation;
+     -moz-animation-duration: 1.4s;
+     -moz-animation-iteration-count: infinite;
+          animation-name: arrow-animation;
+          animation-duration: 1.4s;
+          animation-iteration-count: infinite;
+  display: block;
+  font-size: 2em;
+  position: relative;
+}
